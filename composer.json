@@ -1,0 +1,15 @@
+{
+    "name": "balise/wp_artisan",
+    "description": "Scaffold your WP project with amazing Laravel Artisan like commands.",
+    "type": "project",
+    "require": {
+        "symfony/console": "^4.2@dev"
+    },
+    "authors": [
+        {
+            "name": "Francis Lafortune",
+            "email": "francislafort@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
