@@ -16,6 +16,10 @@ class ComposerStaticInitd38bdd4108307a9569d7070efc4fe905
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Component\\Console\\' => 26,
         ),
+        'C' => 
+        array (
+            'Command\\' => 8,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
@@ -26,6 +30,10 @@ class ComposerStaticInitd38bdd4108307a9569d7070efc4fe905
         'Symfony\\Component\\Console\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/console',
+        ),
+        'Command\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src',
         ),
     );
 

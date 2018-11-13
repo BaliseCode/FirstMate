@@ -5,6 +5,11 @@
     "require": {
         "symfony/console": "^4.2@dev"
     },
+    "autoload": {
+        "psr-4": {
+            "Command\\": "src"
+        }
+    },
     "authors": [
         {
             "name": "Francis Lafortune",
