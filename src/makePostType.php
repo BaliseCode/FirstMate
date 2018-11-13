@@ -6,7 +6,7 @@
  * Time: 11:11
  */
 
-namespace Command;
+namespace Balise\Command;
 
 
 use Symfony\Component\Console\Command\Command;
