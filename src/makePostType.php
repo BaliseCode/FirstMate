@@ -28,10 +28,10 @@ class makePostType extends Command
     private $output;
 
 
-    public function __construct($base_dir)
+    public function __construct()
     {
-        $this->base_dir = $base_dir;
-        $this->cpt_dir = $base_dir . '/custom_post_type';
+        $this->base_dir = THEME;
+        $this->cpt_dir = $this->base_dir . '/custom_post_type';
         parent::__construct();
     }
 
