@@ -1,20 +1,22 @@
 {
-    "name": "balise/wp_artisan",
-    "description": "Scaffold your WP project with amazing Laravel Artisan like commands.",
-    "type": "project",
-    "require": {
-        "symfony/console": "^4.2@dev"
-    },
-    "autoload": {
-        "psr-4": {
-            "Balise\\Command\\": "src/"
-        }
-    },
-    "authors": [
-        {
-            "name": "Francis Lafortune",
-            "email": "francislafort@gmail.com"
-        }
-    ],
-    "minimum-stability": "dev"
+  "name": "balise/wp_artisan",
+  "description": "Scaffold your WP project with amazing Laravel Artisan like commands.",
+  "type": "project",
+  "require": {
+    "symfony/console": "^4.2@dev"
+  },
+  "autoload": {
+    "psr-4": {
+      "Balise\\Command\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Francis Lafortune",
+      "email": "francislafort@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "license": "MIT",
+  "homepage": "https://balise.ca"
 }
