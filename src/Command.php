@@ -19,7 +19,7 @@ class Command extends SymfonyCommand
 
     public function createDirectory()
     {
-            @mkdir($this->dir,'0755',true);
+            @mkdir($this->dir,0755,true);
         return true;
 
     }
