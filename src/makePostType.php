@@ -9,7 +9,7 @@
 namespace Balise\Command;
 
 
-use Balise\Command\Command;
+use Balise\Command\Command;  
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Input\InputArgument;
@@ -34,7 +34,7 @@ class makePostType extends Command
         $this->cpt_dir = $this->base_dir . '/custom_post_type';
         parent::__construct();
     }
-    
+
     private function createDirectory()
     {
         $dir = $this->cpt_dir;
