@@ -1,0 +1,17 @@
+<?php
+use Symfony\Component\Console\Application;
+
+use Balise\Command\MakePostType;
+use Balise\Command\MakeTaxonomy;
+
+require 'vendor/autoload.php';
+
+define('THEME_CPT',__DIR__.'/app/content/posttypes');
+define('THEME_TAXONOMIES',__DIR__.'/app/content/taxonomies');
+
+$app = new Application('WordPress Basement', '0.0');
+
+$app->add(new MakePostType());
+$app->add(new MakeTaxonomy());
+
+$app->run();

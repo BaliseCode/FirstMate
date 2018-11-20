@@ -1,7 +1,7 @@
 {
-  "name": "balise/wp_artisan",
+  "name": "balise/firstmate",
   "description": "Scaffold your WP project with amazing Laravel Artisan like commands.",
-  "type": "project",
+  "type": "library",
   "require": {
     "symfony/console": "^4.2@dev"
   },
