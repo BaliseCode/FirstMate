@@ -8,27 +8,33 @@
 
 namespace Balise\Command;
 use Symfony\Component\Console\Command\Command as SymfonyCommand;
+use Symfony\Component\Console\Input\InputInterface;
+use Symfony\Component\Console\Output\OutputInterface;
 
 
-class Command extends SymfonyCommand
+abstract class Command extends SymfonyCommand
 {
+
+    /**
+     * @var $output OutputInterface
+     */
+    private $output;
+
+    abstract public function runCommand(InputInterface $input, OutputInterface $output);
+
     public function message($level, $message)
     {
         $this->output->writeln('<' . $level . '>' . $message . '</' . $level . '>');
     }
 
-    public function createDirectory()
+    /**
+     * @param InputInterface $input
+     * @param OutputInterface $output
+     * @return int|null|void
+     */
+    public function execute(InputInterface $input, OutputInterface $output)
     {
-            @mkdir($this->dir,0755,true);
-        return true;
-
-    }
-    public function createFile($origin, $dest, $stub_fields)
-    {
-        $stub = file_get_contents($origin);
-        foreach ($stub_fields as $key => $field) {
-            $stub = str_replace($key, $field, $stub);
-        }
-        return !(file_put_contents($dest, $stub)===false);
+        $this->output = $output;
+        $this->runCommand($input, $output);
     }
 }
