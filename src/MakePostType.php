@@ -38,8 +38,8 @@ class MakePostType extends Make
         $this->stub_fields = [
             'dummy_post_type' => $name,
             'dummy_post_name' => ucfirst($name),
-            'Dummy_singular_name' => $singular,
-            'Dummy_plural_name' => $plural,
+            'dummy_singular_name' => $singular,
+            'dummy_plural_name' => $plural,
             'is_public' => $is_public,
             'post_has_archive' => $has_archive,
         ];
