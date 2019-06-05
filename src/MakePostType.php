@@ -9,9 +9,9 @@ class MakePostType extends Make
 
     protected $singular = 'post type';
     protected $plural = 'post types';
-    protected $directory = 'post_types';
+    protected $directory = 'post_type';
 
-    protected $stub = 'taxonomy.stub';
+    protected $stub = 'customPostType.stub';
 
 
     public function setOptions()
