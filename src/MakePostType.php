@@ -40,6 +40,8 @@ class MakePostType extends Make
             'dummy_post_name' => ucfirst($name),
             'dummy_singular_name' => $singular,
             'dummy_plural_name' => $plural,
+            'Dummy_singular_name' => $singular,
+            'Dummy_plural_name' => $plural,
             'is_public' => $is_public,
             'post_has_archive' => $has_archive,
         ];
