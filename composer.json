@@ -3,7 +3,7 @@
   "description": "Scaffold your WP project with amazing Laravel Artisan like commands.",
   "type": "library",
   "require": {
-    "symfony/console": "^4.2@dev"
+    "symfony/console": "*"
   },
   "autoload": {
     "psr-4": {
